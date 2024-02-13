@@ -1,0 +1,36 @@
+.carousel{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#title{
+    font-size: 30pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+    height: 300px;
+    width: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center; 
+}
+#footerText{
+    color: white;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#donateBtn{
+    background-color: rgb(212, 14, 14);
+    color: blue;
+    padding: 30px;
+    margin: 20px;
+}
+#box{
+    display: flex;
+    justify-content: center;
+}

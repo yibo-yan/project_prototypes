@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/custom.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div id = "cookieBanner">
+        <p>This website uses cookies. By continuing to use this site, you accept our use of cookies.</p>
+        <button id="closeBanner">Got it!</button>
+    </div>
+    <div id = "wrap">
+        <div id = "headers">
+            <h1>Billy Yan</h1> 
+            <p>Mathematics & Computer Science Student at NYU , Co-Founder of Uranus Studio | Huawei Cloud Intern</p>
+        </div>
+    </div>
+    <div id = "heroSection">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="navBtn nav-link" aria-current="page" href="index.html">Introduction</a>
+            </li>
+            <li class="nav-item navBtn">
+              <a class="nav-link" id = "scrollToCV" href="#">Academic background</a>
+            </li>
+            <li class="nav-item navBtn">
+              <a class="nav-link" id  = "scrollToContact" href="#">Contact Me</a>
+            </li>
+          </ul>
+    </div>
+    <!-- here is gallery of my personal pictures -->
+    <div class = "container containerDes">
+        <div id = "gallery">
+            <div id="carouselExampleIndicators" class="carousel slide slider">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/img1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img3.JPG" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div id = "introText">
+            <p>My name is Billy Yan, currently an undergraduate student at New York University, pursuing a degree in Mathematics & Computer Science. Alongside my academic endeavors, I co-founded Uranus Studio in Sichuan, China, where I've worked on impactful projects. Throughout my NYU journey, I explored Computer Science and the intersection of technology and business through a minor in Business Studies. Participating in algorithm competitions like ACSL, CAT, CCC, and HiMCM enhanced my programming skills in various languages, fostering a love for tackling complex challenges. During the summer of 2022, I had enriching internship experiences. At Chengdu Jingwei Technology, I delved into UWB technology, honing my programming skills and gaining insights into tech industry marketing. Subsequently, at Huawei Cloud, I explored the evolving landscape of cloud computing, particularly focusing on edge computing solutions and envisioning the future of technology, especially in applications like VR/AR and large model training for AI. Beyond corporate internships, as a co-founder of Uranus Studio, I led a team in developing a fall prevention device for the elderly, utilizing Doppler millimeter wave radar technology. This hands-on experience taught me crucial lessons in project management, team building, and interdisciplinary collaboration. In summary, my academic journey, coupled with industry and entrepreneurial experiences, has equipped me with a diverse skill set and a holistic understanding of the technology landscape. Passionate about contributing meaningfully to Mathematics, Computer Science, and technology-driven innovations, I look forward to embracing future challenges and continuing my journey of learning and growth in the world of technology and innovation.</p>
+        </div>
+        <object id = "CV" data="CV/Resume.pdf" width="100%" height="1000px"></object>
+        <!-- Here is the showcase of my work in web design -->
+        <p id = "titleWeb">Here is a personal website I design during the class</p>
+        <iframe class="embed-responsive-item website" src="https://i6.cims.nyu.edu/~yy4435/personal/index.html" allowfullscreen></iframe>
+        <p id = "introText"> This website is designed to be old fashine and it showcase my skill in web design and art expression, that I put my own experience and academic background in it. I believe this website can showcase my programming and product design skill, it you are interest please following the contact message box below that we can discussion about our coprortion</p>
+        <br> <br>
+        <h1 id = "contactMe">Contact Me</h1>
+        <div class="container mt-5" id = "contact">
+          <div class="row justify-content-center">
+              <div class="col-md-6">
+                  <form id = "messContainer">
+                      <div class="form-group mess">
+                          <label for="inputEmail">Email address:</label>
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+                      </div>
+                      <div class="form-group mess">
+                          <label for="inputName">Name:</label>
+                          <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                      </div>
+                      <div class="form-group mess">
+                          <label for="inputAge">Age:</label>
+                          <input type="number" class="form-control" id="inputAge" placeholder="Enter your age" required>
+                      </div>
+                      <div class="form-group mess">
+                          <label for="inputMessage">Message:</label>
+                          <textarea class="form-control" id="inputMessage" rows="3" placeholder="Enter your message" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div id = footer>
+            
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>

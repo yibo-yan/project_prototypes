@@ -1,0 +1,55 @@
+#lightSwitch{
+    width : 70px;
+    height: 80px;
+    background : black;
+    cursor: pointer;
+    border: 2px solid blue;
+}
+
+body{
+    display : flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#htmlExample,
+#cssExample,
+#fxExample
+{
+    width : 400px;
+    height: 400px;
+}
+
+#htmlButton,
+#textButton,
+#appendButton,
+#addButton,
+#cssButton,
+#removeButton,
+#showButton,
+#hideButton,
+#fadeInButton,
+#fadeOutButton,
+#showButton{
+    width : 100px;
+    height : 100px;
+    background: violet;
+}
+#buttonContainer{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: row;
+} 
+
+#colorExample{
+    background: aqua;
+}
+
+.customClass{
+    background: red;
+    position: relative;
+    left: 50px;
+    top : -50px;
+}
